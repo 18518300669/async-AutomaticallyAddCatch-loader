@@ -1,0 +1,42 @@
+{
+  "name": "async-captures-loader",
+  "version": "1.0.0",
+  "description": "a webpack loader that captures error of async function",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "rm -rf lib && npx babel src -d lib --presets=@babel/preset-env ",
+    "test": "npm run lib && node ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18518300669/async-AutomaticallyAddCatch-loader.git"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "babel-plugin-async-captures": "^1.0.0",
+    "loader-utils": "^1.2.3",
+    "memory-fs": "^0.4.1",
+    "webpack": "^4.35.3"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "try",
+    "catch",
+    "webpack",
+    "loader"
+  ],
+  "author": "jacktesla@foxmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18518300669/async-AutomaticallyAddCatch-loader/issues"
+  },
+  "homepage": "https://github.com/18518300669/async-AutomaticallyAddCatch-loader#readme"
+}
