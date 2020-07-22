@@ -1,11 +1,12 @@
 {
   "name": "async-captures-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a webpack loader that captures error of async function",
   "main": "lib/index.js",
   "scripts": {
     "lib": "rm -rf lib && npx babel src -d lib --presets=@babel/preset-env ",
-    "test": "npm run lib && node ./test/index.js"
+    "test": "npm run lib && node ./test/index.js",
+    "prepublishOnly": "npm run lib"
   },
   "repository": {
     "type": "git",
